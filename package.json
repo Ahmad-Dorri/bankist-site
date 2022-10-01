@@ -1,0 +1,27 @@
+{
+  "name": "nexter",
+  "version": "1.0.0",
+  "description": "nexter webpage",
+  "default": "script.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:css/style.css",
+    "dev-server": "live-server",
+    "start": "npm-run-all --parallel dev-server sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use  autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build": "npm-run-all compile:sass  prefix:css compress:css"
+  },
+  "author": "Ahmad Dorri",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.0.0"
+  }
+}
