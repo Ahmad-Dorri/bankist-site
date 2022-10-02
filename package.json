@@ -16,7 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^7.0.1",
-    "sass": "^1.55.0"
+    "sass": "^1.55.0",
+    "swiper": "^8.4.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",

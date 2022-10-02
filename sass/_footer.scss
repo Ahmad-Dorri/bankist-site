@@ -1,0 +1,19 @@
+.footer {
+  padding: 4rem;
+  width: 100%;
+  background-color: #37383d;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  &__heading {
+    color: #fff;
+    padding: 0 20rem;
+  }
+  .navigation__link {
+    color: #fff;
+  }
+  &__logo {
+    width: 8rem;
+  }
+}

@@ -1,0 +1,65 @@
+.operation {
+  margin-top: 15rem;
+  background-color: #fff;
+  padding: 6rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  &__content {
+    grid-template-columns: min-content 1fr;
+    column-gap: 2rem;
+    grid-column: 1 / -1;
+    grid-row: 2/ -1;
+    display: none;
+    &--active {
+      display: grid !important;
+    }
+  }
+  &__logo {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    opacity: 0.6;
+    grid-row: 1 / -1;
+  }
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    grid-column: 2 / span 1;
+  }
+  &__text {
+    font-size: 1.4rem;
+    grid-column: 2 / span 1;
+  }
+  &__btn {
+    border: none;
+    padding: 1.5rem 3rem;
+    text-transform: capitalize;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    &--active {
+      transform: translateY(-7px);
+    }
+    &--box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      margin-top: -12rem;
+    }
+    & span {
+      margin-right: 1rem;
+    }
+    &--1 {
+      background-color: var(--color-primary);
+    }
+    &--2 {
+      background-color: var(--color-secondary);
+    }
+    &--3 {
+      background-color: var(--color-tertiary);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.header {
+  max-height: 8rem;
+  padding: 2rem 8rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.logo {
+  width: 16rem;
+  height: 100%;
+}
+
+.navigation {
+  &__list {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--color-grey-dark-2);
+    transition: all 0.2s;
+  }
+}
