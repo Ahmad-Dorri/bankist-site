@@ -1,3 +1,8 @@
+@mixin init-section {
+  opacity: 0;
+  transform: translateY(8rem);
+  transition: all 1s;
+}
 .section-hero {
   &__text-box {
     grid-column: full-start / col-end 5;
@@ -23,15 +28,18 @@
 
 .section-features {
   grid-column: center-start / center-end;
-
+  @include init-section();
   margin-bottom: 15rem;
 }
 .section-operations {
   grid-column: center-start / center-end;
   margin-bottom: 15rem;
+  @include init-section();
 }
 .section-testimonials {
   grid-column: center-start / center-end;
+
+  // @include init-section();
   .testimonial {
     &__heading {
       font-size: 2.5rem;
@@ -64,4 +72,8 @@
 
 .section__title {
   padding: 4rem;
+}
+.section-animation {
+  opacity: 1;
+  transform: translateY(-8rem);
 }

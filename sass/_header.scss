@@ -1,9 +1,16 @@
 .header {
   max-height: 8rem;
+  width: 100%;
   padding: 2rem 8rem;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
+  z-index: 9999;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .logo {
@@ -26,5 +33,6 @@
     text-transform: capitalize;
     color: var(--color-grey-dark-2);
     transition: all 0.2s;
+    scroll-behavior: smooth;
   }
 }
